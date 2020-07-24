@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+
+
+	<meta charset="UTF-8">
+    <title>HCR</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="{{ url_for('static',filename='js/jquery.js') }}" rel="javascript" type="text/javascript"></script>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/bootstrap-theme.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static' ,filename='css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
+    <script src="{{ url_for('static' ,filename='js/bootstrap.min.js') }}" rel="javascript" style="text/javascript"></script>
+    <link href="{{ url_for('static',filename='css/menu.css') }}" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+  <meta charset="UTF-8">
+  <title>CodePen - Hero Animation - Canvas Background</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container hero">
+	<div style="background:transparent" class="inner jumbotron">
+
+		<h1 style="color: #b30059">HANDWRITTEN CHARACTER RECOGNITION</h1>
+		<h2 style="color: #b30059">Using Neural Networks</h2>  <br>
+		<p><a style="background:#b30059; border:none; color:#ffe6ee" class="btn btn-primary btn-lg" href="/proceed" role="button">PROCEED</a></p>
+		<br><p style="color:#262626">
+			An Implementation of Handwritten Character Recognition Using Neural Networks.</br>
+We make use of Google Tesseract 4.0 which uses Neural Network to train itself For Charcter Recogniton
+		</p> <br>
+		<p>
+
+		</p>
+		<p>
+			<span><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></span>
+			<span><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></span>
+			<span><a href="#" target="_blank"><i class="fa fa-github"></i></a></span>
+			<span><a href="#" target="_blank"><i class="fa fa-bitbucket"></i></a></span>
+			<span><a href="#" target="_blank"><i class="fa fa-codepen"></i></a></span>
+		</p>
+		<h3 style="color:#990033">Made By:</h3>
+		<h3 style="color:#cc0044"> Sarah Ismail and Pratiksha Tandon</h3>
+	</div>
+	<div class="overlay"></div>
+	<div class="background">
+		<canvas id="hero-canvas" width="1920" height="1080"></canvas>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="{{url_for('static',filename='js/script.js')}}"></script>
+
+</body>
+</html>
